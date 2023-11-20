@@ -1,27 +1,14 @@
 {
   "canisters": {
-    "token_backend": {
-      "main": "src/token_backend/main.mo",
+    "token": {
+      "main": "src/token/main.mo",
       "type": "motoko"
-    },
-    "token_frontend": {
-      "dependencies": [
-        "token_backend"
-      ],
-      "frontend": {
-        "entrypoint": "src/token_frontend/src/index.html"
-      },
-      "source": [
-        "src/token_frontend/assets",
-        "dist/token_frontend/"
-      ],
-      "type": "assets"
     }
   },
   "defaults": {
     "build": {
       "args": "",
-      "packtool": ""
+      "packtool": "mops sources"
     }
   },
   "output_env_file": ".env",
