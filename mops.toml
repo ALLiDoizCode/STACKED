@@ -1,3 +1,6 @@
 [dependencies]
 base = "0.9.7"
 ICRC1 = "https://github.com/CigDao/ICRC1#main"
+
+[dev-dependencies]
+test = "1.1.0"
